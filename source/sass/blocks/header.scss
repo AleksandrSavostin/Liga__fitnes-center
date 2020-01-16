@@ -22,7 +22,8 @@
   padding-top: 30px;
   padding-bottom: 51px;
 
-  background-image: url("../../img/header-background.jpg");
+  background-color: #a70630;
+  background-image: url("../img/header-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -242,12 +243,12 @@
   margin-top: -5px;
 
   background-color: #000000;
-  background-image: url("../../img/desktop-superman.jpg");
+  background-image: url("../img/desktop-superman.jpg");
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/desktop-superman@2x.jpg");
+    background-image: url("../img/desktop-superman@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
@@ -255,10 +256,10 @@
     height: 390px;
     margin-top: 19px;
 
-    background-image: url("../../img/tablet-superman.jpg");
+    background-image: url("../img/tablet-superman.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/tablet-superman@2x.jpg");
+      background-image: url("../img/tablet-superman@2x.jpg");
     }
   }
 
