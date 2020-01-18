@@ -1,0 +1,233 @@
+.gim__photo {
+  width: 660px;
+  height: 401px;
+  background-color: #d5d5e1;
+  background-image: url("../img/desktop-training-holl.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/desktop-training-holl@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    height: 345px;
+
+    background-image: url("../img/tablet-training-holl.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/tablet-training-holl@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 313px;
+
+    background-image: url("../img/mobile-training-holl.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mobile-training-holl@2x.jpg");
+    }
+  }
+}
+
+.gym__video {
+  width: 364px;
+  height: 228px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -113px;
+  margin-left: -63px;
+
+  background-color: #7c8eb3;
+  background-image: url("../../img/desktop-training-video.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/desktop-training-video@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 266px;
+    height: 167px;
+    margin-top: -85px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    background-image: url("../img/tablet-training-video.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/tablet-training-video@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: 167px;
+    margin-top: 40px;
+
+    background-image: url("../img/mobile-training-video.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mobile-training-video@2x.jpg");
+    }
+  }
+}
+
+.gym__video a {
+  display: block;
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../../img/icon.play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: $tablet-width) {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.gym {
+  padding-top: 120px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 95px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 68px;
+  }
+}
+
+.gym__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}
+
+.gym__info {
+  margin-left: 60px;
+  width: 355px;
+  padding-top: 47px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-left: 113px;
+    padding-right: 113px;
+
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-align: left;
+  }
+}
+
+.gym__title {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  color: #102654;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.gym__description {
+  margin: 0;
+  margin-bottom: 40px;
+
+  color: #102654;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.gym__text {
+  margin: 0;
+  margin-bottom: 8px;
+
+  color: #102654;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+
+  @media (max-width: $mobile-width) {
+    padding-right: 30px;
+  }
+}
+
+.gym__text--hidden {
+  display: none;
+}
+
+.gym__gallery {
+  padding-left: 85px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
