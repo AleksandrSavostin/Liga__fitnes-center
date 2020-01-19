@@ -1,0 +1,364 @@
+.subscription {
+  position: relative;
+
+  padding-top: 159px;
+  padding-bottom: 119px;
+
+  background-color: #f8f9fc;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 99px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 69px;
+    padding-bottom: 35px;
+  }
+}
+
+.subscription__wrapper {
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.subscription__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  color: #102654;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 3%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 23px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.subscription__time-list {
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.subscription__time-item {
+  padding-right: 46px;
+
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @media (max-width: $tablet-width) {
+    padding-right: 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 46px;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.subscription__time-item a {
+  display: flex;
+  margin-bottom: -2px;
+  padding-bottom: 11px;
+
+  color: rgba(16, 38, 84, 0.5);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+
+  border-bottom: 2px solid transparent;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+
+  &:active,
+  &:focus {
+    color: #102654;
+    opacity: 1;
+
+    border-bottom: 2px solid #d10a42;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.subscription__rate-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -151px;
+    right: -182px;
+
+    width: 470px;
+    height: 494px;
+
+    background-image: url("../img/desktop-pancakes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/desktop-pancakes@2x.png");
+    }
+
+    @media (max-width: $tablet-width) {
+      bottom: -125px;
+      right: -38px;
+
+      width: 347px;
+      height: 444px;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}
+
+.subscription__rate-item {
+  position: relative;
+  z-index: 9;
+  width: 360px;
+  padding: 7px;
+
+  background: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    width: 442px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  &:hover {
+    background: linear-gradient(to right bottom, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
+  }
+}
+
+.subscription__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
+  padding-bottom: 60px;
+
+  background-color: #ffffff;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 44px;
+    padding-bottom: 47px;
+  }
+}
+
+.subscription__item-title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  color: #102654;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+}
+
+.subscription__item-quanity {
+  margin-bottom: 65px;
+
+  color: #495a7d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 53px;
+  }
+}
+
+.subscription__item-price {
+  position: relative;
+  z-index: 9;
+
+  margin-right: 44px;
+  margin-bottom: 34px;
+
+  color: #103aae;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    font-size: 48px;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: 16px;
+
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    right: 46px;
+
+    width: 30px;
+    height: 42px;
+
+    background-image: url("../img/icon-rub.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: $tablet-width) {
+      right: 87px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 20px;
+      right: 20px;
+
+      width: 24px;
+      height: 33px;
+    }
+  }
+
+  &::before {
+    content: attr(title);
+
+    position: absolute;
+    z-index: -1;
+    right: 28px;
+    top: -54px;
+
+    color: #e8e8e8;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150%;
+
+    pointer-events: none;
+
+    @media (max-width: $tablet-width) {
+      right: 69px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: -44px;
+      right: 7px;
+
+      font-size: 80px;
+    }
+  }
+}
+
+.subscription__item-button {
+  width: 208px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: #102654;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  border: 2px solid #1c3374;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffffff;
+
+    background: linear-gradient(to right, #ed0233 0, #003eb7 100%);
+    border: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}

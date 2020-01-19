@@ -1,0 +1,110 @@
+.game {
+  width: 1200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 120px;
+}
+
+.game__info {
+  flex-grow: 1;
+  padding-left: 79px;
+  padding-right: 78px;
+
+  background-color: #ed0233;
+}
+
+.game__wrapper {
+  display: flex;
+  // padding-left: 79px;
+  // padding-right: 79px;
+  padding-top: 84px;
+}
+
+.game__info__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.game__info-title {
+  width: 200px;
+  margin: 0;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.game__date,
+.game__time {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.game__date,
+.game__time {
+  border-bottom: 1px solid #ffffff;
+}
+
+.game__date-wrapper {
+  display: flex;
+}
+
+.game__day,
+.game__clock {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.game__day-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.game__month,
+.game__year {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.game__description {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.game__link {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.game__image {
+  width: 660px;
+  height: 500px;
+
+  background-color: #010245;
+  background-image: url("../img/super-games.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
