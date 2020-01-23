@@ -1140,16 +1140,16 @@ input[type="radio"].visually-hidden {
   background-position: center; }
 
 .slider__item--anna {
-  background-image: url("../../img/anna.jpg"); }
+  background-image: url("../img/anna.jpg"); }
 
 .slider__item--alexey {
-  background-image: url("../../img/aleksey.jpg"); }
+  background-image: url("../img/aleksey.jpg"); }
 
 .slider__item--aleksandr {
-  background-image: url("../../img/aleksandr.jpg"); }
+  background-image: url("../img/aleksandr.jpg"); }
 
 .slider__item--mary {
-  background-image: url("../../img/mary.jpg"); }
+  background-image: url("../img/mary.jpg"); }
 
 .slider__name {
   position: relative;
@@ -1744,7 +1744,7 @@ button.swiper-pagination-bullet {
   top: 155px;
   width: 35px;
   height: 35px;
-  background-image: url("../../img/icon-direction.svg");
+  background-image: url("../img/icon-direction.svg");
   background-repeat: no-repeat;
   background-position: center; }
   @media (max-width: 767px) {
