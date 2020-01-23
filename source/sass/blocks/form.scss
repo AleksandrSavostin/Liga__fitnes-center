@@ -10,6 +10,10 @@
     padding-bottom: 69px;
     width: 100%;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 67px;
+  }
 }
 
 .form__wrapper {

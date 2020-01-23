@@ -2238,8 +2238,10 @@ button.swiper-pagination-bullet {
       width: 279px; } }
   @media (max-width: 767px) {
     .sale__price-info {
-      width: 100%;
-      padding-bottom: 45px; } }
+      padding-bottom: 45px;
+      width: 290px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .sale__offer {
   display: -webkit-box;
@@ -2495,34 +2497,38 @@ button.swiper-pagination-bullet {
       .footer__bottom-social li:nth-of-type(3n) {
         margin-right: 35px; } }
 
-@media (max-width: 767px) {
-  .footer__bottom-vk {
-    padding-top: 5px; } }
-
-.footer__bottom-social svg {
-  fill: #ffffff; }
-
-.footer__bottom-vk svg {
+.footer__bottom-vk {
   width: 24px;
-  height: 13px; }
+  height: 18px;
+  background-image: url("../img/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
   @media (max-width: 767px) {
-    .footer__bottom-vk svg {
+    .footer__bottom-vk {
       width: 32px;
-      height: 17px; } }
+      height: 17px;
+      padding-top: 5px; } }
 
-.footer__bottom-insta svg {
+.footer__bottom-insta {
   width: 24px;
-  height: 24px; }
+  height: 24px;
+  background-image: url("../img/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
   @media (max-width: 767px) {
-    .footer__bottom-insta svg {
+    .footer__bottom-insta {
       width: 27px;
       height: 27px; } }
 
-.footer__bottom-fb svg {
+.footer__bottom-fb {
   width: 12px;
-  height: 24px; }
+  height: 24px;
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
   @media (max-width: 767px) {
-    .footer__bottom-fb svg {
+    .footer__bottom-fb {
       width: 14px;
       height: 27px; } }
 
@@ -2712,6 +2718,9 @@ button.swiper-pagination-bullet {
       padding-top: 69px;
       padding-bottom: 69px;
       width: 100%; } }
+  @media (max-width: 767px) {
+    .form {
+      padding-bottom: 67px; } }
 
 .form__wrapper {
   padding-top: 61px;
