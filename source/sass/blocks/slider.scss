@@ -1,4 +1,4 @@
-.swiper-container {
+.swiper-container__s1 {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -7,6 +7,17 @@
 /* Fix of Webkit flickering */
   z-index: 1;
 }
+
+.swiper-container__s2 {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+/* Fix of Webkit flickering */
+  z-index: 1;
+}
+
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }
@@ -653,4 +664,14 @@ button.swiper-pagination-bullet {
   @media (max-width: $mobile-width) {
     height: 274px;
   }
+}
+
+.rewiew__slider-container .swiper-button-next {
+  top: 128px;
+  right: -6px;
+}
+
+.rewiew__slider-container .swiper-button-prev {
+  top: 129px;
+  left: -6px;
 }

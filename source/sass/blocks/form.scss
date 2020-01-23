@@ -6,14 +6,14 @@
   background-color: #102654;
 
   @media (max-width: $tablet-width) {
-    padding-top: 67px;
-    padding-bottom: 68px;
+    padding-top: 69px;
+    padding-bottom: 69px;
     width: 100%;
   }
 }
 
 .form__wrapper {
-  padding-top: 57px;
+  padding-top: 61px;
   display: flex;
   justify-content: center;
   width: 683px;
@@ -58,12 +58,12 @@
 
 .form h2 {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   padding: 0;
 
   width: 380px;
 
-  font-family: "Bebas-Neue", "Arial", sans-serif;
+  font-family: "BebasNeue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
   line-height: 64px;

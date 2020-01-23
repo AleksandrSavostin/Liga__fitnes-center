@@ -1,19 +1,51 @@
 .sale {
   padding-top: 119px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 99px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .sale__image {
   height: 462px;
+
+  @media (max-width: $mobile-width) {
+    height: 299px;
+  }
 }
-// .sale__image-desktop {
-//   height: 439px;
-// }
+
+.sale__image-desktop {
+  display: block;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .sale__image-tablet {
   display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .sale__image-mobile {
   display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .sale__title {
@@ -27,6 +59,18 @@
   line-height: 49px;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 41px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .sale__year {
@@ -48,6 +92,10 @@
   color: #ffffff;
   font-size: 70px;
   font-weight: 700;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .sale__text {
@@ -57,6 +105,10 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .sale__more {
@@ -86,6 +138,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .sale__friend-more {
@@ -95,10 +151,17 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
 
-.sale__price-info {
-  background-color: #ed0233;
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    bottom: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: 39px;
+    left: 0;
+    right: 0;
+  }
 }
 
 .sale__wrapper {
@@ -108,11 +171,33 @@
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 700px;
+    padding-left: 11px;
+    padding-right: 11px;
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+    text-align: center;
+  }
 }
 
 .sale__price {
   display: flex;
-  // float: left;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .sale__price-info {
@@ -120,11 +205,31 @@
   padding-top: 35px;
   padding-left: 45px;
   padding-right: 45px;
+
+  background-color: #ed0233;
+
+  @media (max-width: $tablet-width) {
+    width: 279px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-bottom: 45px;
+  }
 }
 
 .sale__offer {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .sale__fitness {
@@ -134,16 +239,54 @@
   padding: 7px;
 
   background-image: linear-gradient(to right bottom, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .sale__fitness--bottom {
   margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.sale__fitness--bottom .sale__fitness-wrapper {
+  @media (max-width: $tablet-width) {
+    padding-right: 30px;
+  }
 }
 
 .sale__fitness-wrapper {
+  position: relative;
+
+  height: 100%;
   padding-top: 21px;
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 27px;
   background-color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 60px;
+    padding-bottom: 92px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 32px;
+    padding-bottom: 81px;
+
+    text-align: center;
+  }
 }

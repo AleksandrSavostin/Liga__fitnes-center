@@ -17,7 +17,8 @@
 
 .contacts__wrapper {
   display: flex;
-  padding-top: 65px;
+  padding-top: 68px;
+  padding-bottom: 15px;
   width: 683px;
 
   justify-content: center;
@@ -41,12 +42,12 @@
 
 .contacts h2 {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 41px;
   padding: 0;
 
   width: 100%;
 
-  font-family: "Bebas-Neue", "Arial", sans-serif;
+  font-family: "BebasNeue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
@@ -186,6 +187,8 @@
   font-size: 14px;
   line-height: 21px;
   color: #102654;
+  text-decoration: none;
+  letter-spacing: 0.1px;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
