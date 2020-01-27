@@ -66,7 +66,7 @@
 .advantages__item-label {
   width: 100%;
   display: block;
-  margin-top: -22px;
+  margin-top: 6px;
 
   color: #102654;
   font-size: 14px;
@@ -74,7 +74,7 @@
   line-height: 150%;
 
   @media (max-width: $tablet-width) {
-    margin-top: -19px;
+    margin-top: 5px;
   }
 }
 
@@ -312,7 +312,7 @@
 
 .advantages__item-description {
   padding-top: 21px;
-  padding-left: 30px;
+  padding-left: 29px;
 
   @media (max-width: $tablet-width) {
     padding-top: 14px;
@@ -321,5 +321,86 @@
   @media (max-width: $mobile-width) {
     padding-top: 7px;
     padding-left: 0;
+  }
+}
+
+.advantages__item-quanity--area img {
+  display: block;
+  min-width: 108px;
+  width: 108px;
+  height: 54px;
+  margin-left: -2px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 89px;
+    width: 89px;
+    height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantages__item-quanity--auto img {
+  display: block;
+  min-width: 72px;
+  width: 72px;
+  height: 54px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 59px;
+    width: 59px;
+    height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantages__item-quanity--place img {
+  display: block;
+  min-width: 108px;
+  width: 108px;
+  height: 54px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 89px;
+    width: 89px;
+    height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantages__item-quanity--year img {
+  display: block;
+  min-width: 70px;
+  width: 70px;
+  height: 54px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 57px;
+    width: 57px;
+    height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantages__item-quanity {
+  padding-top: 24px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 21px;
   }
 }
