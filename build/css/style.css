@@ -2124,31 +2124,31 @@ button.swiper-pagination-bullet {
       padding-right: 15px; } }
 
 .sale__image {
-  height: 462px; }
+  width: 280px;
+  height: auto;
+  background-image: url("../img/desktop-women.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .sale__image {
+      background-image: url("../img/desktop-women@2x.png"); } }
+  @media (max-width: 1199px) {
+    .sale__image {
+      background-image: url("../img/tablet-women.png");
+      width: 399px; } }
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+    .sale__image {
+      background-image: url("../img/tablet-women@2x.png"); } }
   @media (max-width: 767px) {
     .sale__image {
-      height: 299px; } }
-
-.sale__image-desktop {
-  display: block; }
-  @media (max-width: 1199px) {
-    .sale__image-desktop {
-      display: none; } }
-
-.sale__image-tablet {
-  display: none; }
-  @media (max-width: 1199px) {
-    .sale__image-tablet {
-      display: block; } }
-  @media (max-width: 767px) {
-    .sale__image-tablet {
-      display: none; } }
-
-.sale__image-mobile {
-  display: none; }
-  @media (max-width: 767px) {
-    .sale__image-mobile {
-      display: block; } }
+      background-image: url("../img/mobile-women.png");
+      width: 290px;
+      height: 299px;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .sale__image {
+      background-image: url("../img/mobile-women@2x.png"); } }
 
 .sale__title {
   margin: 0;
@@ -2234,6 +2234,10 @@ button.swiper-pagination-bullet {
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase; }
+  .sale__friend-more:hover {
+    opacity: 0.8; }
+  .sale__friend-more:active, .sale__friend-more:focus {
+    opacity: 0.5; }
   @media (max-width: 1199px) {
     .sale__friend-more {
       position: absolute;
@@ -2291,7 +2295,8 @@ button.swiper-pagination-bullet {
   background-color: #ed0233; }
   @media (max-width: 1199px) {
     .sale__price-info {
-      width: 279px; } }
+      width: 279px;
+      padding-bottom: 45px; } }
   @media (max-width: 767px) {
     .sale__price-info {
       padding-bottom: 45px;
