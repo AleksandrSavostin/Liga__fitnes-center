@@ -16,7 +16,6 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    // width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 70px;
@@ -29,8 +28,6 @@
   padding-left: 76px;
   padding-right: 76px;
 
-  // background-color: #ed0233;
-
   @media (max-width: $tablet-width) {
     width: 204px;
     margin-left: auto;
@@ -40,10 +37,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    // min-width: auto;
-    // width: 204px;
-    // margin-left: auto;
-    // margin-right: auto;
     padding: 0;
     padding-top: 30px;
     padding-bottom: 50px;
@@ -51,7 +44,7 @@
 }
 
 .game__info-wrapper {
-    background-color: #ed0233;
+  background-color: #ed0233;
 
   @media (max-width: $tablet-width) {
     flex-grow: 1;
