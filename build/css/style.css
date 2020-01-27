@@ -1711,6 +1711,7 @@ button.swiper-pagination-bullet {
   z-index: 10;
   cursor: pointer;
   outline: none;
+  border: none;
   border-radius: 50%;
   -webkit-transition: 0.7s background;
   transition: 0.7s background;
@@ -1720,6 +1721,13 @@ button.swiper-pagination-bullet {
   background-image: url("../img/icon-direction.svg");
   background-repeat: no-repeat;
   background-position: center; }
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    opacity: 0.8; }
+  .swiper-button-prev:focus, .swiper-button-prev:active,
+  .swiper-button-next:focus,
+  .swiper-button-next:active {
+    opacity: 0.5; }
   @media (max-width: 767px) {
     .swiper-button-prev,
     .swiper-button-next {
