@@ -598,6 +598,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -648,6 +650,9 @@ input[type="radio"].visually-hidden {
     transition: 0.5s; }
   .subscription__time-item a:hover {
     opacity: 0.8; }
+
+.subscription__time-item a.active {
+  border-bottom: 2px solid #d10a42; }
 
 .subscription__rate-list {
   display: -webkit-box;

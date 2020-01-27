@@ -33,5 +33,13 @@ var mySwiper2 = new Swiper('.swiper-container-s2', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
-})
+});
+
+var classLinkList = document.querySelector('.subscription__time-list');
+var activeClass = document.querySelector('.subscription__time-item a');
+
+classLinkList.addEventListener('click', function () {
+  activeClass.classList.remove('active');
+});
+
 })();

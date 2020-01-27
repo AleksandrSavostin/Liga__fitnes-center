@@ -65,6 +65,7 @@
   margin-bottom: 38px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   list-style: none;
@@ -130,6 +131,10 @@
   &:hover {
     opacity: 0.8;
   }
+}
+
+.subscription__time-item a.active {
+  border-bottom: 2px solid #d10a42;
 }
 
 .subscription__rate-list {
