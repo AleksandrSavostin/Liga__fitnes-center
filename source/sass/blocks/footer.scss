@@ -34,18 +34,24 @@
 .footer__bottom-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-left: 103px;
-  padding-right: 103px;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: $tablet-width) {
-    padding-left: 41px;
-    padding-right: 41px;
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
@@ -65,26 +71,10 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: -20px;
+    width: 50%;
 
     font-size: 20px;
     line-height: 20px;
-  }
-}
-
-.footer__bottom-navigation--desktop {
-  display: block;
-
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
-.footer__bottom-navigation--mobile {
-  display: none;
-
-  @media (max-width: $mobile-width) {
-    display: block;
-    width: 100%;
   }
 }
 
@@ -94,6 +84,11 @@
 
   @media (max-width: $tablet-width) {
     width: 422px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    padding-left: 0;
   }
 }
 
@@ -106,6 +101,13 @@
   flex-wrap: wrap;
 
   list-style: none;
+}
+
+.footer__bottom-navigation ul {
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    height: 120px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -141,8 +143,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 0;
     margin-bottom: 20px;
+    margin-right: 88px;
 
     width: 33.4%;
   }
@@ -154,6 +156,15 @@
 
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
@@ -195,7 +206,8 @@
   }
 }
 
-.footer__bottom-vk {
+.footer__bottom-vk a {
+  display: block;
   width: 24px;
   height: 18px;
 
@@ -203,6 +215,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $mobile-width) {
     width: 32px;
@@ -212,7 +233,8 @@
   }
 }
 
-.footer__bottom-insta {
+.footer__bottom-insta a {
+  display: block;
   width: 24px;
   height: 24px;
 
@@ -220,13 +242,23 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $mobile-width) {
     width: 27px;
     height: 27px;
   }
 }
 
-.footer__bottom-fb {
+.footer__bottom-fb a {
+  display: block;
   width: 12px;
   height: 24px;
 
@@ -234,8 +266,23 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $mobile-width) {
     width: 14px;
     height: 27px;
+  }
+}
+
+.footer__bottom-uslugi {
+  @media (max-width: $mobile-width) {
+    margin-top: 41px;
   }
 }

@@ -561,22 +561,16 @@ button.swiper-pagination-bullet {
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
-  // height: 100%;
   position: relative;
   transition-property: transform;
-  height: 294px;
-
-  @media (max-width: $mobile-width) {
-    height: 274px;
-  }
 }
 
-.rewiew__slider-container .swiper-button-next {
+.review .review__slider-container .swiper-button-next {
   top: 128px;
   right: -6px;
 }
 
-.rewiew__slider-container .swiper-button-prev {
+.review .review__slider-container .swiper-button-prev {
   top: 129px;
   left: -6px;
 }
