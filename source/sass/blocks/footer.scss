@@ -139,12 +139,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 30px;
+    margin-right: 32px;
   }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
-    margin-right: 88px;
+    margin-right: 100px;
 
     width: 33.4%;
   }
@@ -187,6 +187,7 @@
 
 .footer__bottom-social li {
   margin-right: 25px;
+  margin-bottom: 5px;
 
   &:nth-of-type(3n) {
     margin-right: 0;

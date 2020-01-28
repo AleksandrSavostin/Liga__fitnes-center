@@ -46,4 +46,11 @@ classLinkList.addEventListener('click', function () {
   activeClass.classList.remove('active');
 });
 
+var elements = document.querySelectorAll('input[type="tel"]');
+  for (var i = 0; i < elements.length; i++) {
+    new IMask(elements[i], {
+      mask: '+{7 }(000) 000 - 00 - 00',
+    });
+  };
+
 })();

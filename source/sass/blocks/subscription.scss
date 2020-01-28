@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 159px;
-  padding-bottom: 119px;
+  padding-bottom: 78px;
 
   background-color: #f8f9fc;
 
@@ -90,7 +90,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-right: 46px;
+    padding-right: 34px;
   }
 
   &:last-of-type {
@@ -102,6 +102,8 @@
   display: flex;
   margin-bottom: -2px;
   padding-bottom: 11px;
+  padding-left: 0;
+  padding-right: 0;
 
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
@@ -144,7 +146,6 @@
 .subscription__rate-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 1160px;
   margin: 0;
   padding: 0;
@@ -196,12 +197,15 @@
   z-index: 9;
   width: 360px;
   padding: 7px;
+  margin-right: 40px;
 
   background: #ffffff;
+  margin-bottom: 40px;
 
   @media (max-width: $tablet-width) {
     width: 442px;
     margin-bottom: 40px;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -211,6 +215,14 @@
 
   &:hover {
     background: linear-gradient(to right bottom, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
+  }
+}
+
+.subscription__rate-item:nth-child(3n) {
+  margin-right: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 

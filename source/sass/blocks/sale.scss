@@ -239,6 +239,7 @@
 
 .sale__offer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   @media (max-width: $tablet-width) {
@@ -263,6 +264,7 @@
     width: 324px;
     margin-left: 0;
     margin-bottom: 10px;
+    margin-right: 30px;
   }
 
   @media (max-width: $mobile-width) {
@@ -271,8 +273,23 @@
   }
 }
 
-.sale__fitness--bottom {
+.sale__fitness:last-of-type {
   margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+}
+
+.sale__fitness:nth-child(2n) {
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.sale__fitness--bottom {
+  // margin-bottom: 0;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 10px;

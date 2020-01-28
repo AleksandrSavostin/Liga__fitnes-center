@@ -357,10 +357,10 @@
             <form method="post" enctype="multipart/form-data" autocomplete="off">
             <h2>Бесплатное занятие</h2>
               <label for="user-name">Имя
-                <input type="text" name="user-name" id="user-name" placeholder="Имя">
+                <input type="text" name="user-name" id="user-name" placeholder="Имя" required="">
               </label>
               <label for="user-phone">Телефон
-                <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон">
+                <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required="">
               </label>
               <div class="form__button">
                 <button type="submit">Отправить</button>
@@ -444,6 +444,7 @@
       </section>
     </footer>
   </main>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

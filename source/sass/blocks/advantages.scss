@@ -155,9 +155,10 @@
 .advantages__list {
   margin: 0;
   padding: 0;
-  width: 1040px;
+  // width: 1040px;
   margin-left: auto;
   margin-right: auto;
+  width: 1022px;
 
   display: flex;
   flex-wrap: wrap;
@@ -243,13 +244,13 @@
 }
 
 .advantages__item--area {
-  padding-left: 27px;
+  padding-left: 20px;
 
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 25px;
 
     border: none;
   }
@@ -261,11 +262,13 @@
 }
 
 .advantages__item--parking {
-  padding-right: 10px;
+  padding-left: 10px;
 
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
   @media (max-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 8px;
     border: none;
   }
 
@@ -277,7 +280,7 @@
 }
 
 .advantages__item--comfort {
-  padding-left: 20px;
+  padding-left: 10px;
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
@@ -290,10 +293,11 @@
 }
 
 .advantages__item--experience {
-  padding-right: 10px;
+  padding-left: 10px;
 
   @media (max-width: $tablet-width) {
     padding-right: 0;
+    padding-left: 0;
   }
 
   @media (max-width: $mobile-width) {
