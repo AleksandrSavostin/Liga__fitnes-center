@@ -21,7 +21,7 @@
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/desktop-women@2x.png");
+    background-image: url("../img/desktop-women@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
@@ -116,6 +116,15 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 .sale__friend-title {

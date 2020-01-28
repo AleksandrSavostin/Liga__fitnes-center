@@ -498,7 +498,9 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-button-prev,
-.swiper-button-next {
+.swiper-button-next,
+.swiper-button-prev-s2,
+.swiper-button-next-s2 {
   position: absolute;
   size: 51px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -535,7 +537,8 @@ button.swiper-pagination-bullet {
   }
 }
 
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-button-prev-s2 {
   left: -65px;
 
   transform: rotate(180deg);
@@ -565,12 +568,12 @@ button.swiper-pagination-bullet {
   transition-property: transform;
 }
 
-.review .review__slider-container .swiper-button-next {
+.swiper-button-next-s2 {
   top: 128px;
   right: -6px;
 }
 
-.review .review__slider-container .swiper-button-prev {
+.swiper-button-prev-s2 {
   top: 129px;
   left: -6px;
 }

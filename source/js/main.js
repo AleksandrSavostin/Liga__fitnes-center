@@ -34,13 +34,13 @@ var mySwiper2 = new Swiper('.swiper-container-s2', {
   slidesPerView: 1,
   spaceBetween: 40,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-s2',
+    prevEl: '.swiper-button-prev-s2',
   }
 });
 
 var classLinkList = document.querySelector('.subscription__time-list');
-var activeClass = document.querySelector('.subscription__time-item a');
+var activeClass = document.querySelector('.subscription__time-item button');
 
 classLinkList.addEventListener('click', function () {
   activeClass.classList.remove('active');

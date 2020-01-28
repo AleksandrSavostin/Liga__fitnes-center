@@ -98,7 +98,7 @@
   }
 }
 
-.subscription__time-item a {
+.subscription__time-item button {
   display: flex;
   margin-bottom: -2px;
   padding-bottom: 11px;
@@ -109,7 +109,11 @@
   line-height: 150%;
   text-decoration: none;
 
+  background-color: transparent;
+  border: none;
   border-bottom: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
@@ -133,7 +137,7 @@
   }
 }
 
-.subscription__time-item a.active {
+.subscription__time-item button.active {
   border-bottom: 2px solid #d10a42;
 }
 
