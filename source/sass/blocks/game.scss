@@ -213,7 +213,7 @@
 
 .game__image {
   width: 660px;
-  height: 500px;
+  // height: 500px;
 
   background-color: #010245;
   background-image: url("../img/super-games.jpg");
@@ -224,11 +224,12 @@
   @media (max-width: $tablet-width) {
     width: auto;
     min-width: 386px;
-    height: 292px;
+    // height: 292px;
   }
 
   @media (max-width: $mobile-width) {
     min-width: 290px;
+    height: 292px;
   }
 }
 
