@@ -108,6 +108,7 @@
   border: none;
   cursor: pointer;
   outline: none;
+  transition: 0.5s;
 
   &:hover {
     opacity: 0.8;

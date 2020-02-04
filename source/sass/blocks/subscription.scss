@@ -202,6 +202,22 @@
   background: #ffffff;
   margin-bottom: 40px;
 
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to right bottom, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+
   @media (max-width: $tablet-width) {
     width: 442px;
     margin-bottom: 40px;
@@ -212,10 +228,10 @@
     width: 100%;
     margin-bottom: 35px;
   }
+}
 
-  &:hover {
-    background: linear-gradient(to right bottom, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
-  }
+.subscription__rate-item:hover.subscription__rate-item::before {
+  opacity: 1;
 }
 
 .subscription__rate-item:nth-child(3n) {
@@ -351,6 +367,8 @@
 }
 
 .subscription__item-button {
+  position: relative;
+
   width: 208px;
   margin-left: auto;
   margin-right: auto;
@@ -368,18 +386,37 @@
   text-decoration: none;
   text-align: center;
 
-  border: 2px solid #1c3374;
+  background-image: linear-gradient(to right, #ed0233 0, #003eb7 100%);
+  transition: 0.5s all;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #ffffff;
+    border: 2px solid #1c3374;
+    box-sizing: border-box;
+    transition: 0.5s all;
+  }
 
   &:hover,
   &:active,
   &:focus {
     color: #ffffff;
-
-    background: linear-gradient(to right, #ed0233 0, #003eb7 100%);
-    border: none;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
+}
+
+.subscription__item-button:hover.subscription__item-button::before {
+  opacity: 0;
+}
+
+.subscription__item-button span {
+  position: relative;
 }

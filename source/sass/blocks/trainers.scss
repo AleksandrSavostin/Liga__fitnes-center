@@ -155,6 +155,7 @@
 
 .slider__item:hover {
   padding-top: 52px;
+  transition: 0.5s;
 
   @media (max-width: $mobile-width) {
     padding-top: 42px;

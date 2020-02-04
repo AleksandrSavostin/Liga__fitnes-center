@@ -129,7 +129,7 @@
   border-radius: 0;
   color: #ffffff;
 
-  transition: all 0.3s ease;
+  transition: 0.5s;
 
   &:hover,
   &:focus {
@@ -188,7 +188,7 @@
   cursor: pointer;
   z-index: 1;
   opacity: 1;
-  transition: all 0.3s ease;
+  transition: 0.5s;
 
   &:hover,
   &:focus {

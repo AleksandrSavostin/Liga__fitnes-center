@@ -117,9 +117,14 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.5s;
 
   &:hover {
     opacity: 0.8;
+    border-color: transparent;
   }
 
   &:active,
@@ -159,8 +164,13 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 1px solid #1c3374;
+  transition: all 0.5s;
 
   &:hover {
+    border-color: transparent;
     opacity: 0.8;
   }
 
